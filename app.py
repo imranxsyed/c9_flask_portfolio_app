@@ -18,7 +18,7 @@ def profile(name):
 	return render_template('index.html', name=name)
 
 
-@app.route('/add_numbers', methods=['GET','POST'])
+@app.route('/python_apps/add_numbers', methods=['GET','POST'])
 def add_numbers_post():
 	  # --> ['5', '6', '8']
 	  # print(type(request.form['text']))
@@ -35,7 +35,7 @@ def add_numbers_post():
   	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
 
-@app.route('/shopping_list', methods=['GET','POST'])
+@app.route('/python_apps/shopping_list', methods=['GET','POST'])
 def shopping_list_post():
 	  # --> ['5', '6', '8']
 	  # print(type(request.form['text']))
@@ -58,7 +58,7 @@ def shopping_list_post():
             return "Easy now! Let's keep it simple! Just words with a space between them"
           
   	      
-@app.route('/time', methods=['GET','POST'])
+@app.route('/python_apps/time', methods=['GET','POST'])
 def time_post():
     # --> ['5', '6', '8']
     # print(type(request.form['text']))
